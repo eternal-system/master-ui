@@ -1,0 +1,47 @@
+.folders {
+	flex: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+  position: relative;
+
+	.folderExplorerItem {
+		border-radius: 3px;
+		padding: 16px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		user-select: none;
+    position: relative;
+		cursor: pointer;
+
+		&:hover {
+			background: #c8f3ff;
+    }
+
+		.folderName {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+
+			.folderNameText {
+				display: flex;
+				align-items: center;		
+				margin-left: 16px;
+
+				.reactIcon {
+					fill: #4bd7fd;
+				}
+
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+
+			svg {
+				width: 24px;
+				height: 24px;
+			}
+    }
+	}
+}

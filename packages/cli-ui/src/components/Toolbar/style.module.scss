@@ -1,0 +1,81 @@
+@import "../../style/vars.scss";
+
+.toolbar {
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+	padding: 16px 0;
+
+  button {
+    color: #fff;
+    background: #20232a;
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .urlPathsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #c8f3ff;
+
+    .urlPaths {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+    }
+
+    button {
+      background-color: #c8f3ff;
+      border-right: 2px solid #fff;
+      border-radius: 3px 0 0 3px;
+
+      svg {
+        fill: #20232a;
+        @include click-rule;
+      }
+    }
+
+    button.editBtn {
+      border-left: 2px solid #fff;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .urlElement {
+      padding: 2.5px;
+      margin: 0 2px;
+      background-color: #c8f3ff;
+      cursor: pointer;
+      border-right: 2px solid #fff;
+    }
+
+    div[class^="inputContent"] {
+      margin: 0;
+      border-bottom: 2px solid #3bd3fc;
+      border-radius: 0;
+
+      input {
+        font-size: 17px;
+        width: 100%;
+      }
+    }
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+
+    svg {
+      fill: #fff;
+    }
+  }
+}
